@@ -28,7 +28,6 @@
         @RenderBody()
 
     </div>
-
     <!-- Bootstrap core JavaScript-->
     <script src="~/Dashboard/vendor/jquery/jquery.min.js"></script>
     <script src="~/Dashboard/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -38,6 +37,8 @@
 
     <!-- Custom scripts for all pages-->
     <script src="~/Dashboard/js/sb-admin-2.min.js"></script>
+    @await Component.InvokeAsync("Notyf")
+
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>

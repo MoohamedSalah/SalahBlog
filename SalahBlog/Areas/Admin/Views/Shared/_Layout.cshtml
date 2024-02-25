@@ -398,6 +398,7 @@
         <!-- End of Content Wrapper -->
 
     </div>
+   
     <!-- End of Page Wrapper -->
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
@@ -440,6 +441,8 @@
     <!-- Page level custom scripts -->
     <script src="~/Dashboard/js/demo/chart-area-demo.js"></script>
     <script src="~/Dashboard/js/demo/chart-pie-demo.js"></script>
+
+    @await Component.InvokeAsync("Notyf")
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>
